@@ -9,7 +9,7 @@ function App() {
   const messageInput = useRef(null);
   const [messages, setMessages] = useState([]);
 
-  socket.current = io("http://localhost:3000/", {
+  socket.current = io("https://chat28.onrender.com/", {
     transports: ['websocket'],
   });
 
